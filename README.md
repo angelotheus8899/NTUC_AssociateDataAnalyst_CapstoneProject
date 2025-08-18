@@ -181,6 +181,7 @@ print("Show data:\n")
 display(df_movies.head())
 ```
 
+```
 :white_check_mark:
     Dimension of the data: (5043, 28)
     
@@ -390,7 +391,7 @@ display(df_movies.head())
 </table>
 <p>5 rows × 28 columns</p>
 </div>
-
+```
 
 ## 2.3. Remove Data Duplication
 
