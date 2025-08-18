@@ -6,9 +6,6 @@
         <p>Name                   : Marteus Yulianto</p>
     </h1>
 </blockquote>  
-
-![png](output_pictures/output_36_1.png)
-
 -----------------------------------------
 ## Content:
 * **1. Introduction**
@@ -950,7 +947,7 @@ plt.show()
 
 
     
-![png](Output Pictures/output_36_1.png)
+![png](output_pictures/output_36_1.png)
     
 
 
@@ -1115,7 +1112,7 @@ g = sns.heatmap(corrmat,annot=True,cmap="RdYlGn")
 
 
     
-![png](output_47_0.png)
+![png](output_pictures/output_47_0.png)
     
 
 
@@ -1175,7 +1172,7 @@ g = sns.heatmap(corrmat,annot=True,cmap="RdYlGn")
 
 
     
-![png](output_55_0.png)
+![png](output_pictures/output_55_0.png)
     
 
 
@@ -1681,7 +1678,7 @@ plt.show()
 
 
     
-![png](output_68_0.png)
+![png](output_pictures/output_68_0.png)
     
 
 
@@ -1738,7 +1735,7 @@ plt.show()
 
 
     
-![png](output_71_0.png)
+![png](output_pictures/output_71_0.png)
     
 
 
@@ -1788,7 +1785,7 @@ plt.show()
 
 
     
-![png](output_74_0.png)
+![png](output_pictures/output_74_0.png)
     
 
 
@@ -1821,7 +1818,7 @@ plt.show()
 
 
     
-![png](output_77_0.png)
+![png](output_pictures/output_77_0.png)
     
 
 
@@ -1864,7 +1861,7 @@ plt.show()
 
 
     
-![png](output_80_0.png)
+![png](output_pictures/output_80_0.png)
     
 
 
@@ -1913,7 +1910,7 @@ plt.show()
 
 
     
-![png](output_83_0.png)
+![png](output_pictures/output_83_0.png)
     
 
 
@@ -1966,7 +1963,7 @@ plt.show()
 
 
     
-![png](output_86_0.png)
+![png](output_pictures/output_86_0.png)
     
 
 
@@ -2014,7 +2011,7 @@ plt.show()
 
 
     
-![png](output_89_0.png)
+![png](output_pictures/output_89_0.png)
     
 
 
@@ -2775,7 +2772,7 @@ plt.show()
 
 
     
-![png](output_115_0.png)
+![png](output_pictures/output_115_0.png)
     
 
 
@@ -2855,7 +2852,7 @@ plt.show()
 
 
     
-![png](output_118_0.png)
+![png](output_pictures/output_118_0.png)
     
 
 
@@ -2948,7 +2945,7 @@ plt.show()
 
 
     
-![png](output_119_1.png)
+![png](output_pictures/output_119_1.png)
     
 
 
@@ -2971,7 +2968,7 @@ plt.show()
 
 
     
-![png](output_119_3.png)
+![png](output_pictures/output_119_3.png)
     
 
 
@@ -3135,7 +3132,7 @@ plt.show()
 
 
     
-![png](output_128_0.png)
+![png](output_pictures/output_128_0.png)
     
 
 
@@ -3155,7 +3152,7 @@ plt.show()
 
 
     
-![png](output_130_0.png)
+![png](output_pictures/output_130_0.png)
     
 
 
