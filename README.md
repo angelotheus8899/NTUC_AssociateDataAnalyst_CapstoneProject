@@ -1178,6 +1178,7 @@ missing_counts = df_cleaned.isna().sum().sort_values(ascending=False)
 # Display remaining missing data
 print(missing_counts)
 ```
+:white_check_mark:Output  
 
     director_name                  0
     duration                       0
@@ -3054,7 +3055,7 @@ plt.show()
     
 ![png](output_pictures/output_128_0.png)
     
-:white_check_mark:Output  
+
 
 ### 4.8.6. Visualized of Selected Features
 
@@ -3074,7 +3075,7 @@ plt.show()
     
 ![png](output_pictures/output_130_0.png)
     
-:white_check_mark:Output  
+
 
 <h1 style="font-size:2em;color:#2467C0">5. Conclusion / Recommendation</h1>
 
