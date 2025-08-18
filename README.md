@@ -7,7 +7,7 @@
     </h1>
 </blockquote>  
 
-![png](Output Pictures/output_36_1.png)
+![png](output_pictures/output_36_1.png)
 
 -----------------------------------------
 ## Content:
