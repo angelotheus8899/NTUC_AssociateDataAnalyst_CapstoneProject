@@ -415,6 +415,7 @@ print("Dimension of the data:", df_movies_no_duplicate.shape)
 df_movies_no_duplicate.isnull().any()
 ```
 :white_check_mark:Output  
+
     color                         True
     director_name                 True
     num_critic_for_reviews        True
@@ -456,6 +457,7 @@ missing_counts = df_movies_no_duplicate.isna().sum().sort_values(ascending=False
 print(missing_counts)
 ```
 :white_check_mark:Output  
+
     gross                        874
     budget                       487
     aspect_ratio                 327
