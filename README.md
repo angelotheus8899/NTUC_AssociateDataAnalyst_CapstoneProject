@@ -400,8 +400,9 @@ duplicate_count = df_movies.duplicated().sum()
 print(f"Number of duplicate rows: {duplicate_count}")
 ```
 
+```
     Number of duplicate rows: 45
-    
+```    
 
 
 ```python
