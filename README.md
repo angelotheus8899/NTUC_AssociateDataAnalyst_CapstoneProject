@@ -181,7 +181,7 @@ print("Show data:\n")
 display(df_movies.head())
 ```
 
-:white_check_mark:
+:white_check_mark:Output  
     Dimension of the data: (5043, 28)
     
     ==================================================================================================== 
