@@ -401,8 +401,8 @@ print(f"Number of duplicate rows: {duplicate_count}")
 ```
 
 ```
-    Number of duplicate rows: 45
-```    
+   + Number of duplicate rows: 45
+```   
 
 
 ```python
