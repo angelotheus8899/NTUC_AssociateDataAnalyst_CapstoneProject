@@ -724,7 +724,7 @@ df_cleaned.groupby(['color']).size()
 ```
 
 
-
+:white_check_mark:Output  
 
     color
      Black and White     130
@@ -741,6 +741,7 @@ del df_cleaned['color']
 print("Dimension of the data:", df_cleaned.shape)
 ```
 
+:white_check_mark:Output  
     Dimension of the data: (3857, 26)
     
 
@@ -753,7 +754,7 @@ df_cleaned.groupby(['language']).size()
 ```
 
 
-
+:white_check_mark:Output  
 
     language
     Aboriginal       2
@@ -803,7 +804,7 @@ df_cleaned.groupby(['language']).size()
 del df_cleaned['language']
 print("Dimension of the data:", df_cleaned.shape)
 ```
-
+:white_check_mark:Output  
     Dimension of the data: (3857, 25)
     
 
@@ -813,6 +814,7 @@ print("Dimension of the data:", df_cleaned.shape)
 for i, col in enumerate(df_cleaned.columns):
     print(f"{i}: {col}")
 ```
+:white_check_mark:Output  
 
     0: director_name
     1: num_critic_for_reviews
@@ -878,6 +880,7 @@ for col in columns_to_impute:
 # show 'genres' column
 print(df_movies_no_duplicate['genres'].head())
 ```
+:white_check_mark:Output  
 
     0    Action|Adventure|Fantasy|Sci-Fi
     1           Action|Adventure|Fantasy
@@ -928,6 +931,7 @@ plt.tight_layout()
 plt.show()
 
 ```
+:white_check_mark:Output  
 
     Overall Average IMDb Score Across All Genres: 6.63
     
@@ -947,6 +951,7 @@ del df_cleaned['genres']
 print("Dimension of the data:", df_cleaned.shape)
 ```
 
+:white_check_mark:Output  
     Dimension of the data: (3857, 24)
     
 
@@ -959,7 +964,7 @@ df_cleaned.groupby(['country']).size()
 ```
 
 
-
+:white_check_mark:Output  
 
     country
     Afghanistan          1
@@ -1025,7 +1030,7 @@ df_cleaned.groupby(['country']).size()
 ```
 
 
-
+:white_check_mark:Output  
 
     country
     Others     490
@@ -1042,7 +1047,7 @@ df_cleaned.groupby(['country']).size()
 del df_cleaned['country']
 print("Dimension of the data:", df_cleaned.shape)
 ```
-
+:white_check_mark:Output  
     Dimension of the data: (3857, 23)
     
 
@@ -1059,6 +1064,7 @@ df_cleaned['movie_title'] = df_cleaned['movie_title'].str.strip()
 # Preview the result
 print(df_cleaned['movie_title'].head())
 ```
+:white_check_mark:Output  
 
     0                                      Avatar
     1    Pirates of the Caribbean: At World's End
@@ -1082,7 +1088,7 @@ del df_cleaned['movie_imdb_link']
 # Check the result
 print("Dimension of the data:", df_cleaned.shape)
 ```
-
+:white_check_mark:Output  
     Dimension of the data: (3857, 18)
     
 
@@ -1112,7 +1118,7 @@ g = sns.heatmap(corrmat,annot=True,cmap="RdYlGn")
 del df_cleaned['cast_total_facebook_likes']
 print("Dimension of the data:", df_cleaned.shape)
 ```
-
+:white_check_mark:Output  
     Dimension of the data: (3857, 17)
     
 
@@ -1144,7 +1150,7 @@ del df_cleaned['num_user_for_reviews']
 
 print("Dimension of the data:", df_cleaned.shape)
 ```
-
+:white_check_mark:Output  
     Dimension of the data: (3857, 15)
     
 
@@ -1201,6 +1207,7 @@ print(missing_counts)
 for i, col in enumerate(df_cleaned.columns):
     print(f"{i}: {col}")
 ```
+:white_check_mark:Output  
 
     0: director_name
     1: duration
@@ -1235,6 +1242,7 @@ for i, col in enumerate(df_cleaned_final.columns):
     
 df_cleaned_final.head(5)
 ```
+:white_check_mark:Output  
 
     0: movie_title
     1: director_name
@@ -1575,6 +1583,7 @@ outlier_summary = outlier_summary.sort_values(by='Outlier Count', ascending=Fals
 print(outlier_summary)
 
 ```
+:white_check_mark:Output  
 
                              Column  Outlier Count  Outlier Percentage (%)
     3   other_actors_facebook_likes            509                   13.20
@@ -1698,7 +1707,7 @@ plt.show()
     
 ![png](output_pictures/output_71_0.png)
     
-
+:white_check_mark:Output  
 
 The histogram shows that IMDb scores are concentrated between **6.0 and 7.5**, forming a slightly left-skewed distribution.
 Fewer movies have very low (<4) or very high (>8.5) ratings, indicating most films receive moderate reviews rather than extremes.
@@ -1748,7 +1757,7 @@ plt.show()
     
 ![png](output_pictures/output_74_0.png)
     
-
+:white_check_mark:Output  
 
 The histogram shows that movie releases increased significantly from the **1990s to the early 2010s**, peaking around **2009–2014**.
 There are very few movies from before 1980, and releases drop sharply after 2015, likely due to dataset coverage rather than actual production decline.
@@ -1781,7 +1790,7 @@ plt.show()
     
 ![png](output_pictures/output_77_0.png)
     
-
+:white_check_mark:Output  
 
 There is positive correlation between movie facebook likes and IMDb Score. Higher movie facebook likes are somewhat associate with higher IMDb scores. 
 
@@ -1824,7 +1833,7 @@ plt.show()
     
 ![png](output_pictures/output_80_0.png)
     
-
+:white_check_mark:Output  
 
 Many movies in the top list are likely from well-known franchises or high-budget productions that performed extremely well at the box office.
 
@@ -1873,7 +1882,7 @@ plt.show()
     
 ![png](output_pictures/output_83_0.png)
     
-
+:white_check_mark:Output  
 
 `Paranormal Activity` tops the list with ROI of **719,000%** turning a $15K budget into over $107M gross.
 High ROI ≠ highest gross. These movies didn't necessary earn the most in total dollars, but their small budgets made the return proportionally massive. 
@@ -1926,7 +1935,7 @@ plt.show()
     
 ![png](output_pictures/output_86_0.png)
     
-
+:white_check_mark:Output  
 
 `Steven Spielberg` dominates the profit from multiples his successful movies and his profit is far above the others.
 
@@ -1974,7 +1983,7 @@ plt.show()
     
 ![png](output_pictures/output_89_0.png)
     
-
+:white_check_mark:Output  
 
 All top 10 movies have IMDb scores clustered in a very narrow range, roughly **8.8 to 9.3**, indicating they are critically acclaimed.
 The difference between the 1st and 10th place is only about 0.5 points, so audience perception of quality is similarly high for all these films. 
@@ -2007,7 +2016,7 @@ del df_cleaned_final['movie_title']
 del df_cleaned_final['director_name']
 print("Dimension of the data:", df_cleaned_final.shape)
 ```
-
+:white_check_mark:Output  
     Dimension of the data: (3857, 13)
     
 
@@ -2293,7 +2302,7 @@ for col in df_cleaned_final[['content_rating']].columns:
 print("Dimension of the data:", df_cleaned_final.shape)
 df_cleaned_final.head()
 ```
-
+:white_check_mark:Output  
     Dimension of the data: (3857, 17)
     
 
@@ -2448,6 +2457,7 @@ print()
 print(x.shape)
 print(y.shape)
 ```
+:white_check_mark:Output  
 
        movie_facebook_likes  director_facebook_likes  actor_1_facebook_likes  \
     0               33000.0                    949.0                  1000.0   
@@ -2531,6 +2541,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,y, test_size=0.2, random_s
 print("Train Shape", x_train.shape)
 print("Test Shape", x_test.shape)
 ```
+:white_check_mark:Output  
 
     Train Shape (3085, 16)
     Test Shape (772, 16)
@@ -2626,7 +2637,7 @@ print(classification_report(y_test, y_pred_rf))
 # Confusion matrix
 conf_matrix_rf = confusion_matrix(y_test, y_pred_rf)
 ```
-
+:white_check_mark:Output  
     
     Classification Report - Random Forest:
     
@@ -2683,7 +2694,7 @@ plt.show()
     
 ![png](output_pictures/output_115_0.png)
     
-
+:white_check_mark:Output  
 
 #### Confusion Matrix Interpretation – Random Forest
 
@@ -2763,7 +2774,7 @@ plt.show()
     
 ![png](output_pictures/output_118_0.png)
     
-
+:white_check_mark:Output  
 
 
 ```python
@@ -2842,7 +2853,7 @@ plt.ylabel("Actual Label")
 plt.tight_layout()
 plt.show()
 ```
-
+:white_check_mark:Output  
     
     Train Class Distribution (Before vs After SMOTE):
      Class  Train Count (Before SMOTE)  Train Count (After SMOTE)
@@ -2856,7 +2867,7 @@ plt.show()
     
 ![png](output_pictures/output_119_1.png)
     
-
+:white_check_mark:Output  
 
     
     Random Forest + SMOTE Accuracy: 0.7474
@@ -2879,7 +2890,7 @@ plt.show()
     
 ![png](output_pictures/output_119_3.png)
     
-
+:white_check_mark:Output  
 
 #### Why accuracy dropped
 
@@ -2952,7 +2963,7 @@ accuracy = accuracy_score(y_test, y_pred)
 print(f"Accuracy: {accuracy:.4%}")  
 
 ```
-
+:white_check_mark:Output  
     Accuracy: 78.1088%
     
 
@@ -2966,7 +2977,7 @@ modelChosen = rfc
 modelChosen.feature_importances_
 print(modelChosen)
 ```
-
+:white_check_mark:Output  
     RandomForestClassifier(class_weight='balanced', max_depth=22, n_estimators=500,
                            n_jobs=-1, random_state=42)
     
@@ -2983,7 +2994,7 @@ features_weight
 ```
 
 
-
+:white_check_mark:Output  
 
     [('movie_facebook_likes', 0.0948783168724323),
      ('director_facebook_likes', 0.07288910201959206),
@@ -3016,7 +3027,7 @@ selectedFeatures
 ```
 
 
-
+:white_check_mark:Output  
 
     [('movie_facebook_likes', 0.0948783168724323),
      ('critic_review_ratio', 0.1076035520700843),
@@ -3043,7 +3054,7 @@ plt.show()
     
 ![png](output_pictures/output_128_0.png)
     
-
+:white_check_mark:Output  
 
 ### 4.8.6. Visualized of Selected Features
 
@@ -3063,7 +3074,7 @@ plt.show()
     
 ![png](output_pictures/output_130_0.png)
     
-
+:white_check_mark:Output  
 
 <h1 style="font-size:2em;color:#2467C0">5. Conclusion / Recommendation</h1>
 
