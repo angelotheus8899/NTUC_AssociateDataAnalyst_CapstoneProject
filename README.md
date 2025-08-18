@@ -8,6 +8,8 @@
 
 </div>
 
+[Github - Machine Learning for Prediction Analysis of Movie IMDb Score](https://github.com/angelotheus8899/NTUC_AssociateDataAnalyst_CapstoneProject)
+
 -----------------------------------------
 ## Content:
 * **1. Introduction**
