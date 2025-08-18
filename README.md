@@ -527,6 +527,7 @@ print("Number of complete cases (rows without any missing values):", complete_ca
 
 ```
 :white_check_mark:Output  
+
     Original rows: 4998
     Rows after cleaning: 3857
     Rows removed: 1141
@@ -544,6 +545,7 @@ missing_counts = df_cleaned.isna().sum().sort_values(ascending=False)
 print(missing_counts)
 ```
 :white_check_mark:Output  
+
     aspect_ratio                 74
     content_rating               51
     plot_keywords                31
@@ -586,6 +588,7 @@ aspect_ratio_counts = df_cleaned['aspect_ratio'].value_counts(dropna=False)
 print(aspect_ratio_counts)
 ```
 :white_check_mark:Output  
+
     aspect_ratio
     2.35     1995
     1.85     1600
@@ -629,6 +632,7 @@ print("Mean IMDb score for aspect ratio 1.85:", round(mean_185, 2))
 print("Mean IMDb score for aspect ratio 2.35:", round(mean_235, 2))
 print("Mean IMDb score for other aspect ratios:", round(mean_other, 2))
 ```
+:white_check_mark:Output  
 
     Mean IMDb score for aspect ratio 1.85: 6.37
     Mean IMDb score for aspect ratio 2.35: 6.51
@@ -642,6 +646,7 @@ print("Mean IMDb score for other aspect ratios:", round(mean_other, 2))
 del df_cleaned['aspect_ratio']
 print("Dimension of the data:", df_cleaned.shape)
 ```
+:white_check_mark:Output  
 
     Dimension of the data: (3857, 27)
     
@@ -655,7 +660,7 @@ df_cleaned.groupby(['content_rating']).size()
 ```
 
 
-
+:white_check_mark:Output  
 
     content_rating
     Approved       17
@@ -698,7 +703,7 @@ df_cleaned.groupby(['content_rating']).size()
 ```
 
 
-
+:white_check_mark:Output  
 
     content_rating
     G          91
