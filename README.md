@@ -2657,8 +2657,8 @@ conf_matrix_rf = confusion_matrix(y_test, y_pred_rf)
 
 #### Overall Metrics
 * **Accuracy (~0.78)** → ~78% of all predictions were correct.
-* **Macro avg** (Precision ~0.59, Recall ~0.48, F1 ~0.51) → Average across all classes treating each class equally, so performance looks worse because Class 1 is failing.
-* **Weighted avg** (Precision ~0.76, Recall ~0.78, F1 ~0.76) → Average weighted by class sizes, dominated by Class 3’s strong results.
+* **Macro avg** (Precision ~0.59, Recall ~0.49, F1 ~0.52) → Average across all classes treating each class equally, so performance looks worse because Class 1 is failing.
+* **Weighted avg** (Precision ~0.75, Recall ~0.78, F1 ~0.76) → Average weighted by class sizes, dominated by Class 3’s strong results.
 
 #### Key Metrics
 * **Precision:** How many of the predicted labels were correct?
@@ -2669,7 +2669,7 @@ conf_matrix_rf = confusion_matrix(y_test, y_pred_rf)
 #### Interpretation
 * **Class 3 (binned IMDb score = 3)** is predicted best:
     * Precision = ~0.81 → ~81% of predicted class 3 are correct.
-    * Recall = ~0.92 → ~92% of actual class 3 are correctly predicted.
+    * Recall = ~0.91 → ~91% of actual class 3 are correctly predicted.
 * **Class 2** has moderate performance.
 * **Class 1 and 4** suffer from:
     * Low sample size (support: 23 and 39).
@@ -2711,30 +2711,30 @@ plt.show()
 
 ##### **Class 1 (Bad) – 23 movies**
 - **0 correct predictions** → Recall = **0%**
-- 15 misclassified as **OK** (Class 2)
-- 8 misclassified as **Good** (Class 3)
+- 14 misclassified as **OK** (Class 2)
+- 9 misclassified as **Good** (Class 3)
 - Model completely failed to detect *Bad* movies.
 
 ---
 
 ##### **Class 2 (OK) – 194 movies**
 - **112 correct** predictions → Recall ≈ **58%**
-- 81 misclassified as **Good** (Class 3)
+- 82 misclassified as **Good** (Class 3)
 - No confusion with *Bad* (Class 1) or *Excellent* (Class 4).
 
 ---
 
-##### **Class 3 (Good) – 514 movies**
-- **476 correct** predictions → Recall ≈ **92%**
-- 38 misclassified as **OK** (Class 2)
+##### **Class 3 (Good) – 516 movies**
+- **471 correct** predictions → Recall ≈ **91%**
+- 43 misclassified as **OK** (Class 2)
 - 2 misclassified as **Excellent** (Class 4)
 - Strongest performing class — model is biased toward predicting “Good”.
 
 ---
 
 ##### **Class 4 (Excellent) – 39 movies**
-- **16 correct** predictions → Recall ≈ **41%**
-- 23 misclassified as **Good** (Class 3)
+- **18 correct** predictions → Recall ≈ **46%**
+- 21 misclassified as **Good** (Class 3)
 - Model often confuses *Excellent* with *Good*.
 
 ---
