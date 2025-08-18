@@ -393,7 +393,7 @@ duplicate_count = df_movies.duplicated().sum()
 print(f"Number of duplicate rows: {duplicate_count}")
 ```
 
-:white_check_mark:
+:white_check_mark:Output  
    Number of duplicate rows: 45   
 
 
@@ -403,7 +403,7 @@ df_movies_no_duplicate = df_movies.drop_duplicates()
 print("Dimension of the data:", df_movies_no_duplicate.shape)
 ```
 
-:white_check_mark:
+:white_check_mark:Output  
     Dimension of the data: (4998, 28)
     
 
@@ -414,10 +414,7 @@ print("Dimension of the data:", df_movies_no_duplicate.shape)
 # Check Missing data
 df_movies_no_duplicate.isnull().any()
 ```
-
-
-
-
+:white_check_mark:Output  
     color                         True
     director_name                 True
     num_critic_for_reviews        True
@@ -458,7 +455,7 @@ missing_counts = df_movies_no_duplicate.isna().sum().sort_values(ascending=False
 # Display the result
 print(missing_counts)
 ```
-
+:white_check_mark:Output  
     gross                        874
     budget                       487
     aspect_ratio                 327
@@ -527,7 +524,7 @@ complete_cases_count = df_cleaned.dropna().shape[0]
 print("Number of complete cases (rows without any missing values):", complete_cases_count)
 
 ```
-
+:white_check_mark:Output  
     Original rows: 4998
     Rows after cleaning: 3857
     Rows removed: 1141
@@ -544,7 +541,7 @@ missing_counts = df_cleaned.isna().sum().sort_values(ascending=False)
 # Display the result
 print(missing_counts)
 ```
-
+:white_check_mark:Output  
     aspect_ratio                 74
     content_rating               51
     plot_keywords                31
@@ -586,7 +583,7 @@ aspect_ratio_counts = df_cleaned['aspect_ratio'].value_counts(dropna=False)
 # Display result
 print(aspect_ratio_counts)
 ```
-
+:white_check_mark:Output  
     aspect_ratio
     2.35     1995
     1.85     1600
