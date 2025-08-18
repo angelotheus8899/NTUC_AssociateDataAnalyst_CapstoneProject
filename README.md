@@ -181,7 +181,6 @@ print("Show data:\n")
 display(df_movies.head())
 ```
 
-```
 :white_check_mark:
     Dimension of the data: (5043, 28)
     
@@ -225,19 +224,12 @@ display(df_movies.head())
     dtypes: float64(13), int64(3), object(12)
     memory usage: 1.1+ MB
     
-
-
     None
 
-
-    
      ==================================================================================================== 
     
     Show data:
     
-    
-
-
 <div>
 <table border="1" class="dataframe">
   <thead>
@@ -391,7 +383,6 @@ display(df_movies.head())
 </table>
 <p>5 rows × 28 columns</p>
 </div>
-```
 
 ## 2.3. Remove Data Duplication
 
@@ -402,7 +393,7 @@ duplicate_count = df_movies.duplicated().sum()
 print(f"Number of duplicate rows: {duplicate_count}")
 ```
 
-> [!NOTE]
+:white_check_mark:
    Number of duplicate rows: 45   
 
 
@@ -412,6 +403,7 @@ df_movies_no_duplicate = df_movies.drop_duplicates()
 print("Dimension of the data:", df_movies_no_duplicate.shape)
 ```
 
+:white_check_mark:
     Dimension of the data: (4998, 28)
     
 
