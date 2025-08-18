@@ -1,12 +1,12 @@
-<blockquote style="text-align:center">
-    <h1 style="font-size:2em;color:#4169E1">
-        <p>NTUC Learning Hub SCTP : Associate Data Analyst</p>
-        <p>Batch ID               : VLC-SCADF11-25-0655</p>
-        <p>Project                : Machine Learning for Predictive Analysis of Movie IMDb Score</p>
-        <p>Name                   : Marteus Yulianto</p>
-    </h1>
-</blockquote>  
+<div align="center">
 
+<h2>🎓 NTUC Learning Hub SCTP : Associate Data Analyst</h2>
+
+<p><b>Batch ID:</b> VLC-SCADF11-25-0655</p>
+<p><b>Project:</b> 🎬 Machine Learning for Predictive Analysis of Movie IMDb Score</p>
+<p><b>Name:</b> 👤 Marteus Yulianto</p>
+
+</div>
 
 -----------------------------------------
 ## Content:
