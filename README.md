@@ -5,7 +5,7 @@
 <p><b>Batch ID:</b> VLC-SCADF11-25-0655</p>
 <p><b>Project:</b> 🎬 Machine Learning for Predictive Analysis of Movie IMDb Score</p>
 <p><b>Name:</b> 👤 Marteus Yulianto</p>
-<p><b>Date: 21 August 2025</b></p>
+<p>Date: 21 August 2025</p>
 
 </div>
 
